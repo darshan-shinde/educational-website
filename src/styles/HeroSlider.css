@@ -1,0 +1,145 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  background: none;
+}
+
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-content {
+  width: 50%;
+  padding: 0 50px;
+}
+
+.slide-content h1 {
+  font-size: 2.5rem;
+  color: #0a3b6c;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.know-more-btn {
+  display: flex;
+  align-items: center;
+  background-color: #0a3b6c;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.know-more-btn svg {
+  margin-left: 10px;
+}
+
+.know-more-btn:hover {
+  background-color: #072a4e;
+}
+
+.slide-image {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-image img {
+  width: 100%;
+  height: auto;
+  max-width: 786px;
+  object-fit: contain;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.prev-btn,
+.next-btn {
+  background: none;
+  border: none;
+  color: #0a3b6c;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.slider-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #0a3b6c;
+}
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: auto;
+    background: #fff;
+  }
+
+  .slide {
+    flex-direction: column;
+    height: auto;
+    position: relative;
+  }
+
+  .slide-content,
+  .slide-image {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .slide-content {
+    order: 1;
+  }
+
+  .slide-image {
+    order: 0;
+    background-color: #1a9cb7;
+    padding: 40px 20px;
+  }
+}

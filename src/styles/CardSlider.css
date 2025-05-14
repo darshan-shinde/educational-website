@@ -1,0 +1,102 @@
+.card-slider-section {
+  padding: 10px 0;
+  background-color: #fff;
+  margin-left: 9.5rem;
+}
+
+.card-slider {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card-slider-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  flex: 0 0 calc(25% - 20px); 
+  padding: 15px;
+  background: url("/Group 9196.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: none;
+  margin: 8px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  scroll-snap-align: start;
+  color: white;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card .know-more-btn {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px; 
+}
+
+.card .know-more-btn svg {
+  margin-left: 0;
+  width: 24px; 
+  height: 24px;
+}
+
+.card .know-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .card {
+    flex: 0 0 calc(40% - 20px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    flex: 0 0 calc(80% - 20px); 
+    height: auto;
+    min-height: 180px;
+  }
+  .card-slider-section {
+    margin-left: 3rem;
+  }
+}

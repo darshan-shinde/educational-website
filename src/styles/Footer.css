@@ -1,0 +1,120 @@
+.footer {
+  background: linear-gradient(180deg, #12406f 0%, #001b3a 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-world-map {
+  background-image: url("/Group 17432.png");
+  background-size: 100% auto;
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+  min-height: 350px;
+}
+
+.footer-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.contact-us h3,
+.follow-us h3,
+.head-office h3 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-us p {
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex; 
+  align-items: center; 
+  gap: 4px;
+}
+
+.contact-us p span {
+  color: #fff;
+  font-weight: 500;
+  display: inline;
+  margin-right: 8px;
+}
+
+.head-office p {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.head-office p svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #fff;
+  color: #12406f;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  background-color: rgba(0, 27, 58, 0.95);
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: -35px ;
+}
+
+.footer-bottom p {
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-world-map {
+    padding: 3rem 0;
+    background-size: 210rem auto;
+    background-position: center bottom;
+  }
+}
