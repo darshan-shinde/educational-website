@@ -209,7 +209,7 @@ const Footer = () => {
       </div>
       <div className="footer-bottom">
         <div className="footer-container">
-          <p>© 2021 All Rights Reserved. Privacy Policy</p>
+          <p>© 2025 All Rights Reserved. Privacy Policy</p>
         </div>
       </div>
     </footer>
